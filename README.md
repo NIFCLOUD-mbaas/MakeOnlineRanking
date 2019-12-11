@@ -1,0 +1,2 @@
+# MakeOnlineRanking
+Monacaサンプルプロジェクトの「ブロック崩し」にオンラインランキングを実装する
