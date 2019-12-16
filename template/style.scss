@@ -34,7 +34,7 @@ li { margin-bottom: .25em; };
 pre, code {
   text-align: left;
   font-family: $font-fixed;
-  color: $secondary;
+  color: $primary;
   background: $code-background;
 }
 a, a:visited, a:hover, a:active { color: $text-dark; }
@@ -235,8 +235,15 @@ blockquote {
 .size_small_7 {
   font-size: 0.7em;
 }
+.size_small_6 {
+  font-size: 0.6em;
+}
 .size_small_5 {
   font-size: 0.5em;
+}
+
+.size_small_4 {
+  font-size: 0.4em;
 }
 .size_small_3 {
   font-size: 0.3em;
