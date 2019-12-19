@@ -1353,7 +1353,7 @@ Score.order("score", true)
      .limit(5)
      .fetchAll()
      .then(function(objects){
-         // 取得に成取得した場合の処理
+         // 取得に成功した場合の処理
 
      })
      .catch(function(err){
@@ -1394,7 +1394,7 @@ title: 7.&nbsp;機能実装②：ランキングを取得する
 ]
 .size_small_6[
 ```js
-// 取得に成取得した場合の処理
+// 取得に成功した場合の処理
 var result = "RANKING";
 for (var i=0; i<objects.length; i++) {
     var name = objects[i].get("name");
@@ -1402,7 +1402,6 @@ for (var i=0; i<objects.length; i++) {
     result = result + "\n " + (i+1) + ": " + score + " (" + name + ")";
 }
 alert(result);
-};
 ```
 ]
 .size_small_5[
