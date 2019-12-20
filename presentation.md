@@ -1653,3 +1653,24 @@ layout: true
 class: impact
 
 ## {{title}}
+
+---
+title: 本日はご参加いただきありがとうございました！
+layout: false
+
+## アンケートのご協力をお願いします
+
+本体験会についてのアンケートにご協力ください。<br>下記のQRコードまたはURLからご回答いただけます。
+
+.col-6[
+.center[<img src="img/mirakonQR.png" alt="mirakonQR.png" width="250px">]
+]
+.col-6[
+<br><br>
+__<a href="http://bit.ly/miracon2" target="_blank">ミラコン体験会アンケート ↗️</a>__<br>
+`http://bit.ly/miracon2`
+]
+
+.bottom-bar[
+  {{title}}
+]
