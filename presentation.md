@@ -757,8 +757,8 @@ title: 4.&nbsp;プロジェクトとクラウドを連携する
 ]
 .col-6[
 .size_small_7[
-* 「JS」フォルダ上でを __右クリック__ する
-* 「新しいファイルの作成」をクリックする
+* 「js」フォルダ上で __右クリック__ する
+* 「新規ファイル作成」をクリックする
 ]
 .center[<img src="img/jsfile02.png" alt="jsfile02.png" width="200px">]
 ]
@@ -780,7 +780,7 @@ title: 4.&nbsp;プロジェクトとクラウドを連携する
 
 .col-6[
 .size_small_7[
-* 「JS」フォルダの「▶︎」をクリックする
+* 「js」フォルダの「▶︎」をクリックする
 *  「mb.js」ファイルをダブルクリックして開く
 ]
 .center[<img src="img/jsfile04.png" alt="jsfile04.png" width="200px">]
@@ -1218,19 +1218,19 @@ title: 7.&nbsp;機能実装②：ランキングを取得する
 
 ```js
 // MARK: ランキング一覧表示ボタン追加
-var lankingLabel = new PIXI.Text("LANKING", {font: "24px/1.2 vt", fill: "red"});
-lankingLabel.position.x = 250;
-lankingLabel.position.y = BB.renderer.height - 52;
-BB.stage.addChild(lankingLabel);
-lankingLabel.buttonMode = true;
-lankingLabel.interactive = true;
-lankingLabel.click = lankingLabel.tap = function(data) {
+var rankingLabel = new PIXI.Text("RANKING", {font: "24px/1.2 vt", fill: "red"});
+rankingLabel.position.x = 250;
+rankingLabel.position.y = BB.renderer.height - 52;
+BB.stage.addChild(rankingLabel);
+rankingLabel.buttonMode = true;
+rankingLabel.interactive = true;
+rankingLabel.click = rankingLabel.tap = function(data) {
     // 【ncmb】ランキング取得
     get_mb();
 };
 setTimeout(function() {
-    lankingLabel.setText("LANKING"); //for Android
-}, 1000, lankingLabel);
+    rankingLabel.setText("RANKING"); //for Android
+}, 1000, rankingLabel);
 ```
 ]
 .size_small_7[
@@ -1353,7 +1353,7 @@ Score.order("score", true)
      .limit(5)
      .fetchAll()
      .then(function(objects){
-         // 取得に成取得した場合の処理
+         // 取得に成功した場合の処理
 
      })
      .catch(function(err){
@@ -1394,15 +1394,14 @@ title: 7.&nbsp;機能実装②：ランキングを取得する
 ]
 .size_small_6[
 ```js
-// 取得に成取得した場合の処理
-var result = "LANKING";
+// 取得に成功した場合の処理
+var result = "RANKING";
 for (var i=0; i<objects.length; i++) {
     var name = objects[i].get("name");
     var score = objects[i].get("score");
     result = result + "\n " + (i+1) + ": " + score + " (" + name + ")";
 }
 alert(result);
-};
 ```
 ]
 .size_small_5[
