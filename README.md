@@ -1,4 +1,4 @@
 # MakeOnlineRanking
 Monacaサンプルプロジェクトの「ブロック崩し」にオンラインランキングを実装する
 
-http://bit.ly/MakeOnlineRanking
+https://natsumo.github.io/MakeOnlineRanking/dist/presentation.html
